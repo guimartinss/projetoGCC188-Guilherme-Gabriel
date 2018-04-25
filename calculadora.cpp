@@ -48,7 +48,7 @@ int div(int divisor, int dividendo){
 }
 
 int mod(int divisor, int dividendo){
-	if(divisor > 0)
+	if(dividendo > 0)
 		return(divisor % dividendo);
 	else return INT_MAX;
 }
