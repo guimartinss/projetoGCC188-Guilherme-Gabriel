@@ -31,18 +31,26 @@ int sub(int x, int y){
 			x = decremento(x);
 			y--;
 		}
-		return x;
 	}else{
 		while(y < 0){
 			x = incremento(x);
 			y++;
 		}
-		return x;
 	}
+	if(x < 0) return 0;
+	else return x;
 }
 
 int div(int divisor, int dividendo){
+	if(dividendo > 0)
+		return (divisor/dividendo);
+	else return INT_MAX;
+}
 
+int mod(int divisor, int dividendo){
+	if(divisor > 0)
+		return(divisor % dividendo);
+	else return INT_MAX;
 }
 
 int main(int argc, char** argv) {
