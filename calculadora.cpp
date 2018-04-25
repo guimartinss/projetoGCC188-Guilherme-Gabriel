@@ -2,6 +2,9 @@
 using namespace std;
 
 
+int incremento(int x){
+	return x++;
+}
 
 int decremento(int x){
     return x--;
